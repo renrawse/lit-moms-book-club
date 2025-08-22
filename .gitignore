@@ -1,9 +1,0 @@
-# Ignore node_modules directory
-# This will prevent the node_modules folder from being tracked by Git
-node_modules/ 
-**/node_modules/
-database/
-**/database/
-.env.local
-SUPABASE_SETUP.md
-src/.env

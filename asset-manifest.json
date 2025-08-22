@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lit-moms-book-club/static/css/main.4f7a135d.css",
-    "main.js": "/lit-moms-book-club/static/js/main.e122c55a.js",
+    "main.js": "/lit-moms-book-club/static/js/main.be23ff22.js",
     "index.html": "/lit-moms-book-club/index.html",
     "main.4f7a135d.css.map": "/lit-moms-book-club/static/css/main.4f7a135d.css.map",
-    "main.e122c55a.js.map": "/lit-moms-book-club/static/js/main.e122c55a.js.map"
+    "main.be23ff22.js.map": "/lit-moms-book-club/static/js/main.be23ff22.js.map"
   },
   "entrypoints": [
     "static/css/main.4f7a135d.css",
-    "static/js/main.e122c55a.js"
+    "static/js/main.be23ff22.js"
   ]
 }
