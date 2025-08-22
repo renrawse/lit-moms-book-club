@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Vote, Award, Database, CheckCircle, Trophy, Clock, BookOpen } from 'lucide-react';
+import { Calendar, Vote, Award, Database, CheckCircle, BookOpen } from 'lucide-react';
 import StarRating from './StarRating';
 
 const HomeView = ({ 
@@ -38,10 +38,12 @@ const HomeView = ({
     selectedVotingRoundPeriod: openVotingRound?.nominationPeriodId
   });
 
-  // Get user's current votes for the open round
-  const currentUserVotes = openVotingRound && userVotes[openVotingRound.id] 
-    ? userVotes[openVotingRound.id] 
-    : [];
+  // Get user's current votes for the open round, memoized to avoid unnecessary useEffect triggers
+  const currentUserVotes = React.useMemo(() => {
+    return openVotingRound && userVotes[openVotingRound.id]
+      ? userVotes[openVotingRound.id]
+      : [];
+  }, [openVotingRound, userVotes]);
 
   // Initialize selected votes if not already done
   useEffect(() => {

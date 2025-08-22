@@ -643,7 +643,7 @@ const AdminView = ({
           <div className="space-y-4">
             {votingRounds && votingRounds.length > 0 ? (
               votingRounds.map(round => {
-                const roundNominations = periodNominations[nominations_period.id] || [];
+                // const roundNominations = periodNominations[nominations_period.id] || [];
                 const results = votingResults[round.id] || [];
                 const totalVotes = results.reduce((sum, result) => sum + result.voteCount, 0);
 
